@@ -29,6 +29,10 @@ body {
   top: 36px;
 }
 
+#news-container {
+  top: 736px;
+}
+
 .tile-heading {
   flex-direction: row;
   width: 100%;
@@ -42,6 +46,10 @@ body {
 
 #area-heading {
   border-bottom: 7px solid rgb(223, 70, 97);
+}
+
+#news-heading {
+  border-bottom: 7px solid rgb(0, 95, 131);
 }
 
 .img-container {
@@ -128,11 +136,19 @@ body {
     width: 92%
   }
 
+  #news-container {
+    top: 1766px;
+  }
+
   .tile-heading {
     flex-direction: column;
   }
 
   #area-heading {
+    padding-bottom: 10px;
+  }
+
+  #news-heading {
     padding-bottom: 10px;
   }
 
