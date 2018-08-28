@@ -8,6 +8,8 @@
 }
 
 body {
+  height: 2100px;
+
   color: rgb(51, 51, 51);
 }
 
@@ -19,7 +21,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
-  /* width: 1150px; */
   height: 600px;
   margin: auto;
 
@@ -28,6 +29,14 @@ body {
 
 #area-container {
   top: 36px;
+}
+
+#news-container {
+  top: 736px;
+}
+
+#inspiration-container {
+  top: 1436px;
 }
 
 .tile-heading {
@@ -45,7 +54,15 @@ body {
   border-bottom: 7px solid rgb(223, 70, 97);
 }
 
-.tile-container {
+#news-heading {
+  border-bottom: 7px solid rgb(0, 95, 131);
+}
+
+#inspiration-heading {
+  border-bottom: 7px solid rgb(107, 165, 57);
+}
+
+.img-container {
   flex-direction: row;
   width: 31%;
   height: 190px;
@@ -66,11 +83,31 @@ body {
   /* border: 1px solid red; */
 }
 
-.left-align {
+.img-1 {
+  order: 1;
   margin-left: 0;
 }
 
-.right-align {
+.img-2 {
+  order: 2;
+}
+
+.img-3 {
+  order: 3;
+  margin-right: 0;
+}
+
+.text-1 {
+  order: 4;
+  margin-left: 0;
+}
+
+.text-2 {
+  order: 5;
+}
+
+.text-3 {
+  order: 6;
   margin-right: 0;
 }
 
@@ -96,4 +133,87 @@ body {
   width: 100%;
   height: 100%;
   margin: auto;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (max-width: 885px) {
+  body {
+    height: 5200px;
+
+    /* background-color: lightGray; */
+  }
+
+  .section-container {
+    flex-flow: column nowrap;
+    width: 92%
+  }
+
+  #news-container {
+    top: 1766px;
+  }
+
+  #inspiration-container {
+    top: 3496px;
+  }
+
+  .tile-heading {
+    flex-direction: column;
+  }
+
+  #area-heading {
+    padding-bottom: 10px;
+  }
+
+  #news-heading {
+    padding-bottom: 10px;
+  }
+
+  #inspiration-heading {
+    padding-bottom: 10px;
+  }
+
+  .img-container {
+    flex-direction: column;
+    width: 353px;
+    margin-top: 0;
+  }
+
+  .text-container {
+    flex-direction: column;
+    width: 353px;
+  }
+
+  .img-1 {
+    order: 1;
+    margin: auto;
+    margin-top: 36px;
+  }
+
+  .img-2 {
+    order: 3;
+    margin-top: 90px;
+  }
+
+  .img-3 {
+    order: 5;
+    margin: auto;
+    margin-top: 90px;
+  }
+
+  .text-1 {
+    order: 2;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .text-2 {
+    order: 4;
+    margin-top: 10px;
+  }
+
+  .text-3 {
+    order: 6;
+    margin: auto;
+    margin-top: 10px;
+  }
 }
