@@ -217,3 +217,25 @@ body {
     margin-top: 10px;
   }
 }
+
+@media screen and (max-width: 395px) {
+  body {
+    height: 5500px;
+  }
+
+  #news-container {
+    top: 1866px;
+  }
+
+  #inspiration-container {
+    top: 3696px;
+  }
+
+  .img-container {
+    width: 92%;
+  }
+
+  .text-container {
+    width: 92%;
+  }
+}
