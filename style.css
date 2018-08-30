@@ -23,8 +23,6 @@ body {
   width: 90%;
   height: 600px;
   margin: auto;
-
-  /* border: 1px solid black; */
 }
 
 #area-container {
@@ -79,8 +77,6 @@ body {
   height: 290px;
   margin: auto;
   margin-top: 10px;
-
-  /* border: 1px solid red; */
 }
 
 .img-1 {
@@ -135,12 +131,10 @@ body {
   margin: auto;
 }
 
-/* -------------------- MEDIA QUERIES -------------------- */
+/* -------------------------- MEDIA QUERY >= 885 -------------------------- */
 @media screen and (max-width: 885px) {
   body {
     height: 5200px;
-
-    /* background-color: lightGray; */
   }
 
   .section-container {
@@ -218,6 +212,7 @@ body {
   }
 }
 
+/* -------------------------- MEDIA QUERY >= 395 -------------------------- */
 @media screen and (max-width: 395px) {
   body {
     height: 5500px;
